@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
 [RequireComponent(typeof(PathMovement))]
 [RequireComponent(typeof(Character))]
+[RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Animator))]
 public class MovementForPath : MonoBehaviour
 {
@@ -50,7 +49,7 @@ public class MovementForPath : MonoBehaviour
     {
         if (_path != null)
         {
-            if (_path.Points?.Any() == true)
+            if (_path.Points?.Any() != false)
             {
                 if (_path.TryGetPoint(_currentIndexPoint, out _currentTargetPoint))
                 {

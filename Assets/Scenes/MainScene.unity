@@ -334,6 +334,7 @@ GameObject:
   - component: {fileID: 295394987}
   - component: {fileID: 295394986}
   - component: {fileID: 295394985}
+  - component: {fileID: 295394988}
   m_Layer: 0
   m_Name: House
   m_TagString: Untagged
@@ -373,8 +374,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aa1cb8dc7a8e5a489fafa8e6f803191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speedIncreaseVolume: 0.15
-  _speedDecreaseVolume: 0.7
+  _timeIncreaseVolumeInSeconds: 2.5
+  _timeDecreaseVolumeInSeconds: 2
 --- !u!82 &295394986
 AudioSource:
   m_ObjectHideFlags: 0
@@ -516,6 +517,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.649893, y: 5.7500954}
   m_EdgeRadius: 0
+--- !u!114 &295394988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295394983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4e2a8eb700cb1842a7ea61cb0ea278b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &437327695
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,7 +956,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174383029}
   m_LocalRotation: {x: -0, y: -0, z: 0.70697933, w: 0.7072342}
-  m_LocalPosition: {x: -0.43081483, y: -1.8246, z: 0}
+  m_LocalPosition: {x: -0.4309911, y: -1.8245399, z: 0}
   m_LocalScale: {x: 1.812311, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1296,7 +1309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: "\u041C\u043E\u0448\u0435\u043D\u043D\u0438\u043A"
-  _speedRun: 2
+  _speedRun: 2.5
 --- !u!50 &2043685739
 Rigidbody2D:
   serializedVersion: 4
