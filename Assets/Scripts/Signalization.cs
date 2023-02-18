@@ -70,7 +70,6 @@ public class Signalization : MonoBehaviour
 
         if (_sound.volume == 0 && _sound.isPlaying == true)
         {
-            Debug.Log("Stop sound");
             _sound.Stop();
 
             canStop = true;
